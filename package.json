@@ -1,0 +1,51 @@
+{
+  "name": "palestra-potiday-js-libs",
+  "version": "0.0.1",
+  "description": "Essa lib vai ser apresentada no evento do potiday-js",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint ./src",
+    "lint:fix": "eslint --fix ./src",
+    "test": "echo \"no test found\"",
+    "prepublishOnly": "npm run build",
+    "dev": "concurrently \"npm link\" \"webpack --mode=development --watch --config webpack.config.js\"",
+    "build": "webpack --mode=production --config webpack.config.js"
+  },
+  "files": [
+    "./lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndersonSMed/palestra-potiday-js-libs"
+  },
+  "bugs": {
+    "url": "https://github.com/AndersonSMed/palestra-potiday-js-libs/issues"
+  },
+  "homepage": "https://github.com/AndersonSMed/palestra-potiday-js-libs#readme",
+  "keywords": [
+    "lib",
+    "js",
+    "potiday"
+  ],
+  "author": "Anderson Medeiros <anderson.santos.medeiros@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.4",
+    "@webpack-cli/generators": "^3.0.7",
+    "babel-loader": "^9.1.2",
+    "concurrently": "^8.2.0",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.8",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "browserslist": [
+    "> 0.2%",
+    "not op_mini all",
+    "not dead"
+  ]
+}
