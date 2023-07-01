@@ -1,6 +1,6 @@
 {
   "name": "palestra-potiday-js-libs",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Essa lib vai ser apresentada no evento do potiday-js",
   "main": "lib/index.js",
   "scripts": {
